@@ -1,0 +1,17 @@
+{{> header}}
+<div class="container details">
+    <div class="details-content">
+        <h2>{{cause.title}}</h2>
+        <strong>{{cause.category}}</strong>
+        <p>{{cause.content}}</p>
+        <div class="buttons">
+            {{#if canEdit}}
+            <a href="#/cause/edit/{{cause.id}}" class="btn edit">Edit</a>
+            <a href="#/cause/dashboard" class="btn edit">Back</a>
+            {{else}}
+            <a href="#/cause/close/{{cause.id}}" class="btn delete">Delete</a>
+            {{/if}}
+        </div>
+    </div>
+</div>
+{{> footer}}

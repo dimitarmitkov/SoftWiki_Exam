@@ -1,0 +1,60 @@
+{{> header}}
+<div href = "#/cause/dashboard" class="content">
+    <section class="js">
+        <h2>JavaScript</h2>
+        {{#each js}}
+        <div class="articles">
+            <article>
+                <h3>{{title}}</h3>
+                <p>{{content}}</p>
+                <a href="#/cause/details/{{id}}" class="btn details-btn">Details</a>
+            </article>
+        </div>
+        {{else}}
+            <h3 class="no-articles">No articles yet</h3>
+        {{/each}}
+    </section>
+    <section class="CSharp">
+        <h2>C#</h2>
+        {{#each cSharp}}
+        <div class="articles">
+            <article>
+                <h3>{{title}}</h3>
+                <p>{{content}}</p>
+                <a href="#/cause/details/{{id}}" class="btn details-btn">Details</a>
+            </article>
+        </div>
+        {{else}}
+            <h3 class="no-articles">No articles yet</h3>
+        {{/each}}
+    </section>
+    <section class="Java">
+        <h2>Java</h2>
+        {{#each java}}
+        <div class="articles">
+            <article>
+                <h3>{{title}}</h3>
+                <p>{{content}}</p>
+                <a href="#/cause/details/{{id}}" class="btn details-btn">Details</a>
+            </article>
+        </div>
+        {{else}}
+            <h3 class="no-articles">No articles yet</h3>
+        {{/each}}
+    </section>
+    <section class="Pyton">
+        <h2>Pyton</h2>
+        {{#each pyton}}
+        <div class="articles">
+            <article>
+                <h3>{{title}}</h3>
+                <p>{{content}}</p>
+                <a href="#/cause/details/{{id}}" class="btn details-btn">Details</a>
+            </article>
+        </div>
+        {{else}}
+            <h3 class="no-articles">No articles yet</h3>
+        {{/each}}
+    </section>
+</div>
+{{> footer}}
